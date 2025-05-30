@@ -8,7 +8,6 @@ function db_connect() {
     return $dbh;
   } catch (PDOException $e){
     //we should set a global variable here so we know the database is down
-    return null;
   }
 }
 
